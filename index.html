@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta content="text/html" http-equiv=Content-Type>
+<script language=JavaScript>
+<!--
+     function calculate(form){
+        form.result.value = gcd(parseInt(form.data1.value),parseInt(form.data2.value))
+       }
+
+  
+     function gcd(m,n){
+       return (n==0 ? m : gcd(n,m%n));
+       }
+-->
+</script>
+<meta content="MSHTML 5.00.2014.210" name=GENERATOR>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3-css.css	">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: "Playfair Display";
+    letter-spacing: 10px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">RafaelWeb</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#function" class="w3-bar-item w3-button">Function</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;margin-top:35px;margin-bottom:60px" id="home">
+  <img class="w3-image" src="Header.png" alt="Front-end" width="1600" height="1000">
+  <script src="js.js"></script>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="HeadShot.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="450" height="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Me</h1><br>
+	  <p class="w3-text-grey">在校期間學過(1)HTML、CSS、JavaScript，並實作寵物網站，後來在修習UNIX課程中，學習後端管理，並將之前所學的網頁經驗結合一起。
+	  (2)利用Arduino UNO實作遙控LED泡，學習微控制器的開發，從材料準備、開發環境、麵包板接線、使用藍芽模組，透過手機來控制燈泡。Arduino是個容易上手的微控制器，在實作的過程中，透過Google自學相關知識，再不停嘗試，或許比別人多花了些許時間，但實作成功後的成就感，是無可取代的。
+	  (3)Kinect開發，透過內建紅外線深度感應器，可以追蹤人體關節，來感測使用者動作，實作小遊戲。</p><br> 	
+    </div>
+  </div>
+    
+  
+  
+  <hr>
+  <!-- Function -->
+  <div class="w3-container w3-padding-64" id="function">
+    <div class="w3-section w3-padding-large">
+      <h1>Function</h1><br>
+	  <h5 class="w3-center"> G.C.D </h5>
+	  <hr>	  
+	 <form style="margin:auto;width:60%">
+		<b>請 輸 入 兩 組 數 字 :</b> <br> <br> 
+		第一組 : <input class="w3-input w3-border" name=data1 size=17> <br> <br>
+        第二組 : <input class="w3-input w3-border" name=data2 size=17> <br> <br>
+
+		最大公因數為 : <br> <br>
+		<input class="w3-input w3-border" name=result size=19>
+		<input onclick=calculate(this.form) class="w3-button w3-block w3-dark-grey" type=button value=開始計算>
+	 </form>
+    </div>
+  </div>
+
+
+  
+  <hr>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact Me</h1><br>
+	<hr style="width:200px" class="w3-greyscale-max">
+	     <h5><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Front-end Developer</h5>
+         <h5><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>No.267, Sec. 2, Fuxing Rd., Daxi Dist., Taoyuan City 335, Taiwan (R.O.C.)</h5>
+         <h5><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>karta55189@gmail.com</h5>
+         <h5><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0936713228</h5>
+		 
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by RafaelHuang</p>
+</footer>
+
+</body>
+</html>
