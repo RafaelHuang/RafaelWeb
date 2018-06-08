@@ -2,22 +2,10 @@
 <html>
 <title>W3.CSS Template</title>
 <meta content="text/html" http-equiv=Content-Type>
-<script language=JavaScript>
-<!--
-     function calculate(form){
-        form.result.value = gcd(parseInt(form.data1.value),parseInt(form.data2.value))
-       }
-
-  
-     function gcd(m,n){
-       return (n==0 ? m : gcd(n,m%n));
-       }
--->
-</script>
 <meta content="MSHTML 5.00.2014.210" name=GENERATOR>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3-css.css	">
+<link rel="stylesheet" href="css/w3.css	">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
@@ -42,9 +30,9 @@ h1,h2,h3,h4,h5,h6,p {
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;margin-top:35px;margin-bottom:60px" id="home">
-  <img class="w3-image" src="Header.png" alt="Front-end" width="1600" height="1000">
-  <script src="js.js"></script>
+<header style="max-width:1600px;max-height:1600px;margin-top:35px" id="home">
+  <img class="w3-image" src="images/Header.png" alt="Front-end" width="1600" height="1000">
+  <h1 class="w3-center"><script src="src/time.js"></script></h1>
 </header>
 
 <!-- Page content -->
@@ -53,7 +41,7 @@ h1,h2,h3,h4,h5,h6,p {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="HeadShot.jpg" class="w3-round w3-image w3-opacity-min" alt="About Me" width="450" height="600">
+     <img src="images/HeadShot.jpg" class="w3-round w3-image w3-opacity-min" alt="About Me" width="450" height="600">
     </div>
 
     <div class="w3-col m6 w3-padding-large">
@@ -81,6 +69,7 @@ h1,h2,h3,h4,h5,h6,p {
 		最大公因數為 : <br> <br>
 		<input class="w3-input w3-border" name=result size=19>
 		<input onclick=calculate(this.form) class="w3-button w3-block w3-dark-grey" type=button value=開始計算>
+		<script src="src/gcd.js"></script>
 	 </form>
     </div>
   </div>
