@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html" http-equiv=Content-Type>
+		<meta content="MSHTML 5.00.2014.210" name=GENERATOR>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>HsuanMing</title>
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="images/BSD.ico" />
+		 <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+		 <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />		
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link rel="stylesheet" href="css/w3.css	" />
+		<link rel="stylesheet" href="css/resume.css" />
+	</head>
+	<style>
+	body {font-family: "Times New Roman", Georgia, Serif;}
+	h1,h2,h3,h4,h5,h6,p {
+		font-family: "Playfair Display";
+	}
+	</style>
+	<body id="page-top">
+	<!-- Navbar (sit on top) -->
+	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="#home">RafaelWeb</a>
+                <!-- 螢幕縮小顯示選單-->
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+			<!-- navbar links. -->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#function">Function</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>				
+				</ul>	
+			</div>  
+		</div>
+	</nav>
+
+	<!-- Header -->
+        <header class="masthead bg-primary" style="background-image: url('images/Header.png')">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Welcome</h1>
+						<br><br><br>  
+                        <a class="btn btn-primary" href="#about">Get Started</a>
+                    </div>
+                </div>
+            </div>        
+		</header>
+
+	<!-- Page content -->
+	<div class="w3-content" style="max-width:1100px">
+
+	  <!-- About Section -->
+	  <div class="w3-row w3-padding-64" id="about">
+		<div class="w3-col m6 w3-padding-large w3-hide-small">
+		 <img src="images/HeadShot.jpg" class="w3-round w3-image w3-opacity-min" alt="About Me" width="450" height="600">
+		</div>
+
+		<div class="w3-col m6 w3-padding-large">
+		  <h1 class="w3-center">About Me</h1><br>
+		  <p class="w3-text-grey">在校期間學過(1)HTML、CSS、JavaScript，並實作寵物網站，後來在修習UNIX課程中，學習後端管理，並將之前所學的網頁經驗結合一起。
+		  (2)利用Arduino UNO實作遙控LED泡，學習微控制器的開發，從材料準備、開發環境、麵包板接線、使用藍芽模組，透過手機來控制燈泡。Arduino是個容易上手的微控制器，在實作的過程中，透過Google自學相關知識，再不停嘗試，或許比別人多花了些許時間，但實作成功後的成就感，是無可取代的。
+		  (3)Kinect開發，透過內建紅外線深度感應器，可以追蹤人體關節，來感測使用者動作，實作小遊戲。</p><br> 	
+		</div>
+	  </div>
+		
+	  
+	  
+	  <hr>
+	  <!-- Function -->
+	  <div class="w3-container w3-padding-64" id="function">
+		<div class="w3-section w3-padding-large">
+		  <h1>Function</h1><br>
+		  <h5 class="w3-center"> G.C.D </h5>
+		  <hr>	  
+		 <form style="margin:auto;width:60%">
+			<b>請 輸 入 兩 組 數 字 :</b> <br> <br> 
+			第一組 : <input class="w3-input w3-border" name=data1 size=17> <br> <br>
+			第二組 : <input class="w3-input w3-border" name=data2 size=17> <br> <br>
+
+			最大公因數為 : <br> <br>
+			<input class="w3-input w3-border" name=result size=19><br>
+			<input onclick=calculate(this.form) class="w3-button w3-block w3-dark-grey" type=button value=開始計算>
+			<script src="src/gcd.js"></script>
+		 </form>
+		</div>
+	  </div>
+
+
+	  
+	  <hr>
+	  <!-- Contact Section -->
+	  <div class="w3-container w3-padding-64" id="contact">
+		<h1>Contact Me</h1><br>
+		<hr style="width:200px" class="w3-greyscale-max">
+			 <h5><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Front-end Developer</h5>
+			 <h5><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>No.267, Sec. 2, Fuxing Rd., Daxi Dist., Taoyuan City 335, Taiwan (R.O.C.)</h5>
+			 <h5><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>karta55189@gmail.com</h5>
+			 <h5><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0936713228</h5>
+			 
+		<form action="/action_page.php" target="_blank">
+		  <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+		  <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+		  <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+		  <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+		  <p>
+			<button class="w3-button w3-light-grey w3-padding-large" type="submit">
+			  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+			</button>
+		  </p>
+		</form>
+	  </div>
+	  
+	<!-- End page content -->
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-light-grey w3-padding-32">
+	  <p>Powered by RafaelHuang</p>
+	</footer>
+	<!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	</body>
+</html>
